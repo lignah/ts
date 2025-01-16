@@ -12,11 +12,14 @@ interface Cephalopoda extends Animalia {
 }
 
 class Vertebrata implements Cephalopoda {
-  name: string
-  color: string
-  habitat: string
-  constructor(name: string) {
+  name: string;
+  color: string;
+  habitat: string;
+  
+  constructor(name: string, color: string, habitat: string) {
     this.name = name
+    this.color = color
+    this.habitat = habitat
   }
 }
 
